@@ -28,8 +28,8 @@ export const qpcode = (text: string) => {
         .replace(/\[urlo=([^<>[\]]+)\]/g, '<a href="$1" target="_blank">')
         .replace(/\[\/urlo\]/g, "</a>")
         .replace(/\[img=([^<>[\]]+)\]/g, '<img src="$1" alt="" />')
-        .replace(/\[ico=([a-z- ]+)\]/g, '<i class="mdi $1"></i>')
-    return r
+        .replace(/\[ico=([a-z- ]+)\]/g, '<i class="mdi $1"></i>');
+    return r;
 }
 
 export const qpdate = (value: string|null=null, lang: string="fr", tz: string="America/Toronto", show: string="full") => {
@@ -42,29 +42,29 @@ export const qpdate = (value: string|null=null, lang: string="fr", tz: string="A
         day: (["full","date"].includes(show) ? "numeric" : undefined),
         hour: (["full","time"].includes(show) ? "2-digit" : undefined),
         minute: (["full","time"].includes(show) ? "2-digit" : undefined)
-    }
+    };
     return d.toLocaleString(lang, o);
 }
 
 export const qpslug = (value: string|number) => {
     return value.toString()
-    .normalize("NFD")
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, "-")
-    .replace(/ð/g, "d")
-    .replace(/ß/g, "ss")
-    .replace(/§/g, "ss")
-    .replace(/ł/g, "l")
-    .replace(/ø/g, "o")
-    .replace(/æ/g, "ae")
-    .replace(/œ/g, "oe")
-    .replace(/ĸ/g, "k")
-    .replace(/µ/g, "u")
-    .replace(/[^\w\-]+/g, "")
-    .replace(/\_/g, "-")
-    .replace(/\-\-+/g, "-")
-    .replace(/\-$/g, "");
+        .normalize("NFD")
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, "-")
+        .replace(/ð/g, "d")
+        .replace(/ß/g, "ss")
+        .replace(/§/g, "ss")
+        .replace(/ł/g, "l")
+        .replace(/ø/g, "o")
+        .replace(/æ/g, "ae")
+        .replace(/œ/g, "oe")
+        .replace(/ĸ/g, "k")
+        .replace(/µ/g, "u")
+        .replace(/[^\w\-]+/g, "")
+        .replace(/\_/g, "-")
+        .replace(/\-\-+/g, "-")
+        .replace(/\-$/g, "");
 }
 
 export const qpunit = (num: number, digits: number = 2) => {
@@ -89,6 +89,6 @@ const qpfilters = {
     qpdate,
     qpslug,
     qpunit
-}
+};
 
 export default qpfilters;
