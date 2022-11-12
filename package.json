@@ -1,7 +1,7 @@
 {
   "name": "@mcpronovost/qpfilters",
-  "version": "1.0.5",
-  "description": "Filters.",
+  "version": "1.0.6",
+  "description": "An easy-to-use collection of filters, mostly created to be used with Vue.js.",
   "author": "M-C Pronovost <mcpronovostkurkiency@gmail.com> (https://github.com/mcpronovost)",
   "license": "MIT",
   "private": false,
@@ -14,6 +14,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "filters"
+    "filters",
+    "javascript",
+    "vuejs",
+    "date",
+    "datetime",
+    "time",
+    "timezone",
+    "slug",
+    "slugify"
   ]
 }
