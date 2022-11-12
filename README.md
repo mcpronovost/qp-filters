@@ -32,7 +32,7 @@
 | :-- | :-- |
 | method | `qpdate(value, lang, tz, show)` |
 | default | `qpdate(null, "fr", "America/Toronto", "full")` |
-| example | `qpdate("2022-10-31T13:50:14.836475-04:00", "fr", "America/Toronto", "full")` |
+| example | `qpdate("2022-10-31T13:50:14.836475-04:00")` |
 | return | 31 octobre 2022 à 13:50 |
 | | |
 
