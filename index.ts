@@ -1,6 +1,5 @@
 export const qpcode = (text: string) => {
-    let result = text
-    result = result
+    let r = text
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
         .replace(/>/g, "&gt;")
@@ -30,12 +29,12 @@ export const qpcode = (text: string) => {
         .replace(/\[\/urlo\]/g, "</a>")
         .replace(/\[img=([^<>[\]]+)\]/g, '<img src="$1" alt="" />')
         .replace(/\[ico=([a-z- ]+)\]/g, '<i class="mdi $1"></i>')
-    return result
+    return r
 }
 
 export const qpdate = (value: string|null=null, lang: string="fr", tz: string="America/Toronto", show: string="full") => {
-    let date_value = !!value ? new Date(value) : new Date(new Date().toString());
-    let options: Intl.DateTimeFormatOptions = {
+    let d = !!value ? new Date(value) : new Date(new Date().toString());
+    let o: Intl.DateTimeFormatOptions = {
         timeZone: tz,
         hour12: false,
         year: (["full","date"].includes(show) ? "numeric" : undefined),
@@ -44,7 +43,7 @@ export const qpdate = (value: string|null=null, lang: string="fr", tz: string="A
         hour: (["full","time"].includes(show) ? "2-digit" : undefined),
         minute: (["full","time"].includes(show) ? "2-digit" : undefined)
     }
-    return date_value.toLocaleString(lang, options);
+    return d.toLocaleString(lang, o);
 }
 
 export const qpslug = (value: string|number) => {
@@ -69,20 +68,20 @@ export const qpslug = (value: string|number) => {
 }
 
 export const qpunit = (num: number, digits: number = 2) => {
-    const lookup = [
-        { value: 1, symbol: "" },
-        { value: 1e3, symbol: "k" },
-        { value: 1e6, symbol: "M" },
-        { value: 1e9, symbol: "G" },
-        { value: 1e12, symbol: "T" },
-        { value: 1e15, symbol: "P" },
-        { value: 1e18, symbol: "E" }
+    const l = [
+        { v: 1, u: "" },
+        { v: 1e3, u: "k" },
+        { v: 1e6, u: "M" },
+        { v: 1e9, u: "G" },
+        { v: 1e12, u: "T" },
+        { v: 1e15, u: "P" },
+        { v: 1e18, u: "E" }
     ];
     const rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
-    var item = lookup.slice().reverse().find(function (item) {
-        return num >= item.value;
+    var i = l.slice().reverse().find(function (i) {
+        return num >= i.v;
     });
-    return item ? (num / item.value).toFixed(digits).replace(rx, "$1") + item.symbol : "0";
+    return i ? (num / i.v).toFixed(digits).replace(rx, "$1") + i.u : "0";
 }
 
 const qpfilters = {

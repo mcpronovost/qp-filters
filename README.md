@@ -90,13 +90,13 @@ An easy-to-use collection of filters, mostly created to be used with Vue.js.
 
 | | |
 | :-- | :-- |
-| example | `qpdate("2022-10-31T13:50:14.836475-04:00", "en", "America/Toronto", "date")` |
-| return | October 31, 2022 |
+| example | `qpdate("2022-10-31T13:50:14.836475-04:00", "pl", "Europe/Warsaw", "date")` |
+| return | 31 października 2022 |
 | | |
 
 | | |
 | :-- | :-- |
-| example | `qpdate("2022-10-31T13:50:14.836475-04:00", "en", "Europe/Paris", "time")` |
+| example | `qpdate("2022-10-31T13:50:14.836475-04:00", "pl", "Europe/Warsaw", "time")` |
 | return | 18:50 |
 | | |
 
