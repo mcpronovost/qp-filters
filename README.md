@@ -10,7 +10,7 @@ An easy-to-use collection of filters, originally created for use in a roleplayin
 
 ## Available Filters
 
-* [qpcode](#qpcode)
+* [qpcode](https://github.com/mcpronovost/qp-filters/wiki/qpcode)
 * [qpdate](https://github.com/mcpronovost/qp-filters/wiki/qpdate)
 * [qprhex](https://github.com/mcpronovost/qp-filters/wiki/qprhex)
 * [qpslug](https://github.com/mcpronovost/qp-filters/wiki/qpslug)
@@ -51,35 +51,6 @@ An easy-to-use collection of filters, originally created for use in a roleplayin
         <span v-text="$f.qpdate(props.topic.created_at)"></span>
     </template>
 ```
-
---------------------------------------------------------------------
-
-## qpcode
-
-A light and simple way to format user-made text.
-
-| | |
-| :-- | :-- |
-| method | `qpcode(text)` |
-| example | `qpcode("This is a [g]bold text[/g] and \n this is an [i]italic text[/i].")` |
-| return | `This is a <span style="font-weight:bold;">bold text</span> and <br /> this is an <span style="font-style:italic;">italic text</span>.` |
-| | |
-
-| code | description | css/html |
-| :-- | :-- | :-- |
-| [g] text [/g] | Bold text | `font-weight:bold` |
-| [i] text [/i] | Italic text | `font-style:italic` |
-| [s] text [/s] | Underline text | `text-decoration:underline` |
-| [b] text [/b] | Strikethrough text | `text-decoration:line-through` |
-| [ag] text [/ag] | Left align text | `text-align:left` |
-| [ac] text [/ac] | Center align text | `text-align:center` |
-| [ad] text [/ad] | Right align text | `text-align:right` |
-| [c=#ff0000] text [/c] | Colour text (hexadecimal) | `color:#ff0000` |
-| [c=variable] text [/c] | Colour text (variable) | `color:var(--c-variable)` |
-| [url=https://...] text [/url] | Link | `<a href="https://...">text</a>` |
-| [urlo=https://...] text [/urlo] | Link on new tab | `<a href="https://..." target="_blank">text</a>` |
-| [img=https://...] | Image | `<img src="https://..." alt="" />` |
-| [ico=mdi-leaf] | Icon (default material icon) | `<i class="mdi mdi-leaf"></i>` |
 
 --------------------------------------------------------------------
 
