@@ -67,6 +67,22 @@ An easy-to-use collection of filters, mostly created to be used with Vue.js.
 | return | `This is a <span style="font-weight:bold;">bold text</span> and <br /> this is an <span style="font-style:italic;">italic text</span>.` |
 | | |
 
+| code | description | css/html |
+| :-- | :-- | :-- |
+| [g] text [/g] | Bold text | `font-weight:bold` |
+| [i] text [/i] | Italic text | `font-style:italic` |
+| [s] text [/s] | Underline text | `text-decoration:underline` |
+| [b] text [/b] | Strikethrough text | `text-decoration:line-through` |
+| [ag] text [/ag] | Left align text | `text-align:left` |
+| [ac] text [/ac] | Center align text | `text-align:center` |
+| [ad] text [/ad] | Right align text | `text-align:right` |
+| [c=#ff0000] text [/c] | Colour text (hexadecimal) | `color:#ff0000` |
+| [c=variable] text [/c] | Colour text (variable) | `color:var(--c-variable)` |
+| [url=https://...] text [/url] | Link | `<a href="https://...">text</a>` |
+| [urlo=https://...] text [/urlo] | Link on new tab | `<a href="https://..." target="_blank">text</a>` |
+| [img=https://...] | Image | `<img src="https://..." alt="" />` |
+| [ico=mdi-leaf] | Icon (default material icon) | `<i class="mdi mdi-leaf"></i>` |
+
 ## qpdate
 
 | | |
