@@ -150,3 +150,13 @@ A way to format number to metric-unit version, with or without decimal.
 | example | `qpunit(4928, 0)` |
 | return | 5k |
 | | |
+
+--------------------------------------------------------------------
+
+## History
+
+* See [qp-filters release](https://github.com/mcpronovost/qp-filters/releases) list.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/mcpronovost/qp-filters/blob/main/LICENSE) file for details.
