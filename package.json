@@ -4,11 +4,11 @@
   "description": "Filters.",
   "author": "M-C Pronovost <mcpronovostkurkiency@gmail.com> (https://github.com/mcpronovost)",
   "license": "MIT",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git://github.com/mcpronovost/qp-filters.git"
   },
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
