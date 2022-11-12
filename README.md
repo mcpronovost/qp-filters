@@ -12,6 +12,7 @@ An easy-to-use collection of filters, mostly created to be used with Vue.js 3.
 
 * [qpcode](#qpcode)
 * [qpdate](#qpdate)
+* [qprhex](#qprhex)
 * [qpslug](#qpslug)
 * [qpunit](#qpunit)
 
