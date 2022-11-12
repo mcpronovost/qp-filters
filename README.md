@@ -1,7 +1,6 @@
 # qp-filters &middot; [![npm version](https://img.shields.io/npm/v/@mcpronovost/qpfilters.svg?style=flat)](https://www.npmjs.com/package/@mcpronovost/qpfilters) ![npm license](https://img.shields.io/npm/l/@mcpronovost/qpfilters?color=%231081c2)
 
-An easy-to-use collection of filters, mostly used with Vue.js 3.
-These filters were created for use in a roleplaying project.
+An easy-to-use collection of filters, originally created for use in a roleplaying project build with Vue.js 3.
 
 ## Install
 
