@@ -22,12 +22,7 @@ An easy-to-use collection of filters, mostly created to be used with Vue.js.
 ``` vue
 <script setup>
   import { qpdate } from "@mcpronovost/qpfilters";
-  const props = defineProps({
-      topic: {
-          type: Object,
-          required: true
-      }
-  })
+  // ...
 </script>
 
 <template>
