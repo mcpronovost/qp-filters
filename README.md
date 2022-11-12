@@ -8,6 +8,12 @@ An easy-to-use collection of filters, mostly created to be used with Vue.js.
   $ npm install @mcpronovost/qpfilters --save
 ```
 
+## Available Filters
+
+* [qpdate](#qpdate)
+* [qpslug](#qpslug)
+* [qpunit](#qpunit)
+
 ## Usage
 
 ### Direct include
@@ -28,7 +34,7 @@ An easy-to-use collection of filters, mostly created to be used with Vue.js.
 </template>
 ```
 
-### Global include
+### Global include (Vue.js 3)
 
 ``` javascript
     import { createApp } from "vue";
