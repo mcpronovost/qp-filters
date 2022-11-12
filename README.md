@@ -11,7 +11,7 @@ An easy-to-use collection of filters, originally created for use in a roleplayin
 ## Available Filters
 
 * [qpcode](#qpcode)
-* [qpdate](#qpdate)
+* [qpdate](https://github.com/mcpronovost/qp-filters/wiki/qpdate)
 * [qprhex](#qprhex)
 * [qpslug](#qpslug)
 * [qpunit](#qpunit)
@@ -80,30 +80,6 @@ A light and simple way to format user-made text.
 | [urlo=https://...] text [/urlo] | Link on new tab | `<a href="https://..." target="_blank">text</a>` |
 | [img=https://...] | Image | `<img src="https://..." alt="" />` |
 | [ico=mdi-leaf] | Icon (default material icon) | `<i class="mdi mdi-leaf"></i>` |
-
-## qpdate
-
-A way to format aware datetime to localized human-friendly date with, without or only time.
-
-| | |
-| :-- | :-- |
-| method | `qpdate(value, lang, tz, show)` |
-| default | `qpdate(null, "fr", "America/Toronto", "full")` |
-| example | `qpdate("2022-10-31T13:50:14.836475-04:00")` |
-| return | 31 octobre 2022 à 13:50 |
-| | |
-
-| | |
-| :-- | :-- |
-| example | `qpdate("2022-10-31T13:50:14.836475-04:00", "pl", "Europe/Warsaw", "date")` |
-| return | 31 października 2022 |
-| | |
-
-| | |
-| :-- | :-- |
-| example | `qpdate("2022-10-31T13:50:14.836475-04:00", "pl", "Europe/Warsaw", "time")` |
-| return | 18:50 |
-| | |
 
 --------------------------------------------------------------------
 
