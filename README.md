@@ -10,6 +10,7 @@ An easy-to-use collection of filters, originally created for use in a roleplayin
 
 ## Available Filters
 
+* [qpabbr](https://github.com/mcpronovost/qp-filters/wiki/qpabbr)
 * [qpcode](https://github.com/mcpronovost/qp-filters/wiki/qpcode)
 * [qpdate](https://github.com/mcpronovost/qp-filters/wiki/qpdate)
 * [qprhex](https://github.com/mcpronovost/qp-filters/wiki/qprhex)
@@ -55,6 +56,14 @@ An easy-to-use collection of filters, originally created for use in a roleplayin
 --------------------------------------------------------------------
 
 ## Examples
+
+### qpabbr
+
+``` javascript
+qpabbr("Pachu'a Wapi Qatlaalawsiq")
+```
+
+`PWQ`
 
 ### qpcode
 

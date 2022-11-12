@@ -1,3 +1,11 @@
+export const qpabbr = (value: string|null, max: number|undefined=undefined) => {
+    if (value) {
+        let v = value.split(" ").map((k) => k[0]);
+        let r = v.slice(0,max).join("").toUpperCase();
+        return r;
+    } else return "";
+}
+
 export const qpcode = (text: string) => {
     let r = text
         .replace(/&/g, "&amp;")
@@ -89,6 +97,7 @@ export const qpunit = (num: number, digits: number = 2) => {
 }
 
 const qpfilters = {
+    qpabbr,
     qpcode,
     qpdate,
     qprhex,
