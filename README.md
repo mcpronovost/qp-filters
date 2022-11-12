@@ -83,3 +83,21 @@ An easy-to-use collection of filters, mostly created to be used with Vue.js.
 | example | `qpslug("Au royaume empoisonné feat. Seðem")` |
 | return | au-royaume-empoisonne-feat-sedem |
 | | |
+
+--------------------------------------------------------------------
+
+## qpunit
+
+| | |
+| :-- | :-- |
+| method | `qpunit(num, digits)` |
+| default | `qpunit(num, 2)` |
+| example | `qpunit(4928)` |
+| return | 4.93k |
+| | |
+
+| | |
+| :-- | :-- |
+| example | `qpunit(4928, 0)` |
+| return | 5k |
+| | |
