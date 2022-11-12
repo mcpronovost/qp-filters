@@ -1,5 +1,7 @@
 # qp-filters
 
+An easy-to-use collection of filters, mostly created to be used with Vue.js.
+
 ## Install
 
 ```
@@ -7,6 +9,8 @@
 ```
 
 ## Usage
+
+### Direct include
 
 ``` vue
 <script setup>
@@ -22,6 +26,27 @@
 <template>
   <span v-text="qpdate(props.topic.created_at)"></span>
 </template>
+```
+
+### Global include
+
+``` javascript
+    import { createApp } from "vue";
+    import qpfilters from "@mcpronovost/qpfilters";
+
+    const app = createApp(App);
+
+    app.config.globalProperties.$f = qpfilters;
+```
+
+``` vue
+    <script setup>
+        // ...
+    </script>
+
+    <template>
+        <span v-text="$f.qpdate(props.topic.created_at)"></span>
+    </template>
 ```
 
 --------------------------------------------------------------------
