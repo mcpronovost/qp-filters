@@ -16,7 +16,7 @@ An easy-to-use collection of filters, mostly created to be used with Vue.js.
 
 ## Usage
 
-### Direct include
+### Direct include (Vue.js 3)
 
 ``` vue
 <script setup>
