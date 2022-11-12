@@ -1,6 +1,6 @@
 {
   "name": "@mcpronovost/qpfilters",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "An easy-to-use collection of filters, mostly created to be used with Vue.js.",
   "author": "M-C Pronovost <mcpronovostkurkiency@gmail.com> (https://github.com/mcpronovost)",
   "license": "MIT",
