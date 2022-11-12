@@ -1,5 +1,5 @@
-export const qpdate = (value: string, lang: string="fr", tz: string="America/Toronto", show: string="full") => {
-    let date_value = new Date(value)
+export const qpdate = (value: string|null=null, lang: string="fr", tz: string="America/Toronto", show: string="full") => {
+    let date_value = !!value ? new Date(value) : new Date(new Date().toString())
     let options: Intl.DateTimeFormatOptions = {
         timeZone: tz,
         hour12: false,
