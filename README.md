@@ -1,4 +1,4 @@
-# qp-filters
+# qp-filters &middot; [![npm version](https://img.shields.io/npm/v/@mcpronovost/qpfilters.svg?style=flat)](https://www.npmjs.com/package/@mcpronovost/qpfilters)
 
 An easy-to-use collection of filters, mostly created to be used with Vue.js.
 
