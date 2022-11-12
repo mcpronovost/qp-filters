@@ -46,6 +46,10 @@ export const qpdate = (value: string|null=null, lang: string="fr", tz: string="A
     return d.toLocaleString(lang, o);
 }
 
+export const qprhex = () => {
+    return `#${Math.floor((Math.random() * 0xffffff)).toString(16)}`;
+}
+
 export const qpslug = (value: string|number) => {
     return value.toString()
         .normalize("NFD")
@@ -87,6 +91,7 @@ export const qpunit = (num: number, digits: number = 2) => {
 const qpfilters = {
     qpcode,
     qpdate,
+    qprhex,
     qpslug,
     qpunit
 };

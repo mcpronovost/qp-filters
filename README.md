@@ -106,6 +106,19 @@ A way to format aware datetime to localized human-friendly date with, without or
 
 --------------------------------------------------------------------
 
+## qprhex
+
+Return a random hexadecimal colour.
+
+| | |
+| :-- | :-- |
+| method | `qprhex()` |
+| example | `qprhex()` |
+| return | #89a411 |
+| | |
+
+--------------------------------------------------------------------
+
 ## qpslug
 
 A way to slugify text.
