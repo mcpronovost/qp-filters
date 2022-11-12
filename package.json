@@ -1,6 +1,6 @@
 {
   "name": "@mcpronovost/qpfilters",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Filters.",
   "author": "M-C Pronovost <mcpronovostkurkiency@gmail.com> (https://github.com/mcpronovost)",
   "license": "MIT",
@@ -9,6 +9,7 @@
     "type": "git",
     "url": "git://github.com/mcpronovost/qp-filters.git"
   },
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
