@@ -55,6 +55,8 @@ An easy-to-use collection of filters, mostly created to be used with Vue.js 3.
 
 ## qpcode
 
+A light and simple way to format user-made text.
+
 | | |
 | :-- | :-- |
 | method | `qpcode(text)` |
@@ -80,6 +82,8 @@ An easy-to-use collection of filters, mostly created to be used with Vue.js 3.
 
 ## qpdate
 
+A way to format aware datetime to localized human-friendly date with, without or only time.
+
 | | |
 | :-- | :-- |
 | method | `qpdate(value, lang, tz, show)` |
@@ -104,6 +108,8 @@ An easy-to-use collection of filters, mostly created to be used with Vue.js 3.
 
 ## qpslug
 
+A way to slugify text.
+
 | | |
 | :-- | :-- |
 | method | `qpslug(value)` |
@@ -114,6 +120,8 @@ An easy-to-use collection of filters, mostly created to be used with Vue.js 3.
 --------------------------------------------------------------------
 
 ## qpunit
+
+A way to format number to metric-unit version, with or without decimal.
 
 | | |
 | :-- | :-- |
