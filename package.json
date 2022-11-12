@@ -5,6 +5,10 @@
   "author": "M-C Pronovost <mcpronovostkurkiency@gmail.com> (https://github.com/mcpronovost)",
   "license": "MIT",
   "private": false,
+  "homepage": "https://github.com/mcpronovost/qp-filters#readme",
+  "bugs": {
+    "url": "https://github.com/mcpronovost/qp-filters/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/mcpronovost/qp-filters.git"

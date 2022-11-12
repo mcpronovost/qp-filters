@@ -10,6 +10,7 @@ An easy-to-use collection of filters, mostly created to be used with Vue.js.
 
 ## Available Filters
 
+* [qpcode](#qpcode)
 * [qpdate](#qpdate)
 * [qpslug](#qpslug)
 * [qpunit](#qpunit)
@@ -56,6 +57,15 @@ An easy-to-use collection of filters, mostly created to be used with Vue.js.
 ```
 
 --------------------------------------------------------------------
+
+## qpcode
+
+| | |
+| :-- | :-- |
+| method | `qpcode(text)` |
+| example | `qpcode("This is a [g]bold text[/g] and \n this is an [i]italic text[/i].")` |
+| return | This is a <span style="font-weight:bold;">bold text</span> and <br /> this is an <span style="font-style:italic;">italic text</span>. |
+| | |
 
 ## qpdate
 
