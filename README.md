@@ -12,9 +12,9 @@ An easy-to-use collection of filters, originally created for use in a roleplayin
 
 * [qpcode](#qpcode)
 * [qpdate](https://github.com/mcpronovost/qp-filters/wiki/qpdate)
-* [qprhex](#qprhex)
-* [qpslug](#qpslug)
-* [qpunit](#qpunit)
+* [qprhex](https://github.com/mcpronovost/qp-filters/wiki/qprhex)
+* [qpslug](https://github.com/mcpronovost/qp-filters/wiki/qpslug)
+* [qpunit](https://github.com/mcpronovost/qp-filters/wiki/qpunit)
 
 ## Usage
 
@@ -80,52 +80,6 @@ A light and simple way to format user-made text.
 | [urlo=https://...] text [/urlo] | Link on new tab | `<a href="https://..." target="_blank">text</a>` |
 | [img=https://...] | Image | `<img src="https://..." alt="" />` |
 | [ico=mdi-leaf] | Icon (default material icon) | `<i class="mdi mdi-leaf"></i>` |
-
---------------------------------------------------------------------
-
-## qprhex
-
-Return a random hexadecimal colour.
-
-| | |
-| :-- | :-- |
-| method | `qprhex()` |
-| example | `qprhex()` |
-| return | #89a411 |
-| | |
-
---------------------------------------------------------------------
-
-## qpslug
-
-A way to slugify text.
-
-| | |
-| :-- | :-- |
-| method | `qpslug(value)` |
-| example | `qpslug("Au royaume empoisonné feat. Seðem")` |
-| return | au-royaume-empoisonne-feat-sedem |
-| | |
-
---------------------------------------------------------------------
-
-## qpunit
-
-A way to format number to metric-unit version, with or without decimal.
-
-| | |
-| :-- | :-- |
-| method | `qpunit(num, digits)` |
-| default | `qpunit(num, 2)` |
-| example | `qpunit(4928)` |
-| return | 4.93k |
-| | |
-
-| | |
-| :-- | :-- |
-| example | `qpunit(4928, 0)` |
-| return | 5k |
-| | |
 
 --------------------------------------------------------------------
 
