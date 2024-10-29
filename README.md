@@ -1,6 +1,6 @@
 # qp-filters &middot; [![npm version](https://img.shields.io/npm/v/@mcpronovost/qpfilters.svg?style=flat)](https://www.npmjs.com/package/@mcpronovost/qpfilters) [![npm license](https://img.shields.io/npm/l/@mcpronovost/qpfilters?color=%231081c2)](https://github.com/mcpronovost/qp-filters/blob/main/LICENSE)
 
-An easy-to-use collection of filters, originally created for use in a roleplaying project build with Vue.js 3.
+An easy-to-use collection of filters, originally created for use in a roleplaying project.
 
 ## Install
 
@@ -18,6 +18,30 @@ An easy-to-use collection of filters, originally created for use in a roleplayin
 * [qpunit](https://github.com/mcpronovost/qp-filters/wiki/qpunit)
 
 ## Usage
+
+### Direct include (React)
+
+``` jsx
+import { qpdate } from "@mcpronovost/qpfilters";
+
+export default function MyComponent () {
+  return (
+    <>
+      <span>{qpdate(props.topic.created_at)}</span>
+    </>
+  );
+}
+```
+
+### Direct include (Astro)
+
+``` astro
+---
+import { qpdate } from "@mcpronovost/qpfilters";
+---
+
+<span>{qpdate(props.topic.created_at)}</span>
+```
 
 ### Direct include (Vue.js 3)
 
